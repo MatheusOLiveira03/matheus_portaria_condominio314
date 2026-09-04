@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>senhex</title>
+</head>
+<body>
+    <div class="container">
+    <div class = "caixaCentral">
+        <div class = "caixaTexto">
+            <h2 class="titulo">nome</h2>
+            <input type="text">
+        </div>
+        <div class = "caixaTexto">
+            <h2 class="titulo">senha</h2>
+            <input type="text">
+        </div>
+        <button class="btnlogin" type="button"><h4 style="color: black;"><h4>login</h4></button>
+    </div>
+    </div>
+
+</body>
+
+
+<style>* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Caixa roxa central */
+.caixaCentral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 500px;
+
+    background-color: #c10d0d;
+    color: rgb(255, 0, 0);
+
+    text-align: center;
+
+    border-radius: 10%;
+}
+
+/* Área de cada campo */
+.caixaTexto {
+    position: relative;
+
+    width: 100%;
+    height: 120px;
+
+    text-align: center;
+}
+
+/* Primeiro campo */
+.caixaTexto:first-child {
+    margin-top: 70px;
+}
+
+/* Título "nome" e "senha" */
+.titulo {
+    margin: 0 0 10px 0;
+
+    font-size: 24px;
+    color: white;
+}
+
+/* Campos de input */
+.caixaTexto input {
+    width: 300px;
+    height: 45px;
+
+    padding: 5px 12px;
+
+    font-size: 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+/* Quando clicar no input */
+.caixaTexto input:focus {
+    box-shadow: 0 0 8px #ffffff;
+}
+
+/* Botão */
+.btnlogin {
+    width: 120px;
+    height: 40px;
+
+    margin-top: 20px;
+
+    background-color: yellow;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* Texto dentro do botão */
+.btnlogin h4 {
+    margin: 0;
+
+    color: black;
+    font-size: 16px;
+}
+
+/* Quando passar o mouse */
+.btnlogin:hover {
+    background-color: rgb(202, 202, 4);
+
+    transform: scale(1.05);
+}
+
+/* Quando clicar */
+.btnlogin:active {
+    transform: scale(0.95);
+}
+
+</style>
+</html>
